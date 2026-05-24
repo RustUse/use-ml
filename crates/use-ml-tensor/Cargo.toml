@@ -1,0 +1,23 @@
+[package]
+name = "use-ml-tensor"
+description = "Tensor shape and metadata primitives for RustUse machine-learning workflows."
+publish = true
+autoexamples = false
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-ml-tensor"
+keywords = ["ml", "tensor", "shape"]
+categories = ["science", "data-structures"]
+
+[[example]]
+name = "ml_tensor_basic_usage"
+path = "examples/basic_usage.rs"
+
+[lints]
+workspace = true

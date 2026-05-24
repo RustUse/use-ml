@@ -1,0 +1,41 @@
+[package]
+name = "use-ml"
+description = "Composable machine-learning primitive facade for RustUse."
+publish = true
+autoexamples = false
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-ml"
+keywords = ["ml", "metadata", "facade"]
+categories = ["science", "data-structures"]
+
+[dependencies]
+use-ml-dataset.workspace = true
+use-ml-feature.workspace = true
+use-ml-label.workspace = true
+use-ml-tensor.workspace = true
+use-ml-model.workspace = true
+use-ml-training.workspace = true
+use-ml-inference.workspace = true
+use-ml-evaluation.workspace = true
+use-ml-metric.workspace = true
+use-ml-pipeline.workspace = true
+use-ml-embedding.workspace = true
+use-ml-experiment.workspace = true
+use-ml-model-card.workspace = true
+
+[[example]]
+name = "ml_basic_usage"
+path = "examples/basic_usage.rs"
+
+[lints]
+workspace = true
+
+[package.metadata.docs.rs]
+all-features = true

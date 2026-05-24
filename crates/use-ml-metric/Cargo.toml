@@ -1,0 +1,23 @@
+[package]
+name = "use-ml-metric"
+description = "Metric name, value, and direction metadata primitives for RustUse."
+publish = true
+autoexamples = false
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-ml-metric"
+keywords = ["ml", "metric", "metadata"]
+categories = ["science", "data-structures"]
+
+[[example]]
+name = "ml_metric_basic_usage"
+path = "examples/basic_usage.rs"
+
+[lints]
+workspace = true

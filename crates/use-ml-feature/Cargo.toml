@@ -1,0 +1,23 @@
+[package]
+name = "use-ml-feature"
+description = "Feature metadata primitives for RustUse machine-learning workflows."
+publish = true
+autoexamples = false
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-ml-feature"
+keywords = ["ml", "feature", "metadata"]
+categories = ["science", "data-structures"]
+
+[[example]]
+name = "ml_feature_basic_usage"
+path = "examples/basic_usage.rs"
+
+[lints]
+workspace = true

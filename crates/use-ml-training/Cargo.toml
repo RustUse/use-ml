@@ -1,0 +1,23 @@
+[package]
+name = "use-ml-training"
+description = "Training run and hyperparameter metadata primitives for RustUse."
+publish = true
+autoexamples = false
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-ml-training"
+keywords = ["ml", "training", "metadata"]
+categories = ["science", "data-structures"]
+
+[[example]]
+name = "ml_training_basic_usage"
+path = "examples/basic_usage.rs"
+
+[lints]
+workspace = true

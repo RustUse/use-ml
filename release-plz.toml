@@ -1,0 +1,111 @@
+[workspace]
+release = false
+release_always = false
+changelog_update = false
+pr_labels = ["release"]
+max_analyze_commits = 2000
+
+[[package]]
+name = "use-ml-dataset"
+release = true
+version_group = "rustuse-ml"
+
+[[package]]
+name = "use-ml-feature"
+release = true
+version_group = "rustuse-ml"
+
+[[package]]
+name = "use-ml-label"
+release = true
+version_group = "rustuse-ml"
+
+[[package]]
+name = "use-ml-tensor"
+release = true
+version_group = "rustuse-ml"
+
+[[package]]
+name = "use-ml-model"
+release = true
+version_group = "rustuse-ml"
+
+[[package]]
+name = "use-ml-training"
+release = true
+version_group = "rustuse-ml"
+
+[[package]]
+name = "use-ml-inference"
+release = true
+version_group = "rustuse-ml"
+
+[[package]]
+name = "use-ml-evaluation"
+release = true
+version_group = "rustuse-ml"
+
+[[package]]
+name = "use-ml-metric"
+release = true
+version_group = "rustuse-ml"
+
+[[package]]
+name = "use-ml-pipeline"
+release = true
+version_group = "rustuse-ml"
+
+[[package]]
+name = "use-ml-embedding"
+release = true
+version_group = "rustuse-ml"
+
+[[package]]
+name = "use-ml-experiment"
+release = true
+version_group = "rustuse-ml"
+
+[[package]]
+name = "use-ml-model-card"
+release = true
+version_group = "rustuse-ml"
+
+[[package]]
+name = "use-ml"
+release = true
+version_group = "rustuse-ml"
+changelog_update = true
+changelog_path = "./CHANGELOG.md"
+changelog_include = [
+    "use-ml-dataset",
+    "use-ml-feature",
+    "use-ml-label",
+    "use-ml-tensor",
+    "use-ml-model",
+    "use-ml-training",
+    "use-ml-inference",
+    "use-ml-evaluation",
+    "use-ml-metric",
+    "use-ml-pipeline",
+    "use-ml-embedding",
+    "use-ml-experiment",
+    "use-ml-model-card",
+]
+
+[changelog]
+header = """# Changelog
+
+## Unreleased
+"""
+protect_breaking_commits = true
+sort_commits = "oldest"
+commit_parsers = [
+    { message = "^feat(?:\\([^)]+\\))?!?: .+", group = "Added" },
+    { message = "^fix(?:\\([^)]+\\))?!?: .+", group = "Fixed" },
+    { message = "^security(?:\\([^)]+\\))?!?: .+", group = "Security" },
+    { message = "^(?:refactor|perf|change)(?:\\([^)]+\\))?!?: .+", group = "Changed" },
+    { message = "^docs(?:\\([^)]+\\))?!?: .+", group = "Documentation" },
+    { message = "^(?:build|ci|chore|deps|test)(?:\\([^)]+\\))?!?: .+", group = "Tooling" },
+    { footer = "^changelog: ?ignore$", skip = true },
+    { message = "^.*", group = "Changed" },
+]

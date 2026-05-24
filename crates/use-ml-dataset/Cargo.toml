@@ -1,0 +1,23 @@
+[package]
+name = "use-ml-dataset"
+description = "Dataset identity and metadata primitives for RustUse machine-learning workflows."
+publish = true
+autoexamples = false
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-ml-dataset"
+keywords = ["ml", "dataset", "metadata"]
+categories = ["science", "data-structures"]
+
+[[example]]
+name = "ml_dataset_basic_usage"
+path = "examples/basic_usage.rs"
+
+[lints]
+workspace = true
