@@ -21,7 +21,7 @@ jobs:
         use-ml-dataset use-ml-feature use-ml-label use-ml-tensor use-ml-model use-ml-training use-ml-inference use-ml-evaluation use-ml-metric use-ml-pipeline use-ml-embedding use-ml-experiment use-ml-model-card
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install stable Rust toolchain
         uses: actions-rust-lang/setup-rust-toolchain@v1
